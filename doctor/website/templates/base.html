@@ -4,12 +4,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Talha Hospital">
+  <meta name="description" content="{% block meta_description %} Online Medical services in Pakistan- Talha Hospital{% endblock %}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Talha Hospital</title>
+  <title>{% block title %}Talha Hospital{% endblock%}</title>
 
   <!-- Favicon -->
   <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
@@ -81,42 +81,11 @@
               <!-- Nav Start -->
               <div class="classynav">
                 <ul id="nav">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#">Pages</a>
-                    <ul class="dropdown">
-                      <li><a href="about.html">- About Us</a></li>
-                      <li><a href="service.html">- Service</a></li>
-                      <li><a href="pricing.html">- Pricing</a></li>
-                      <li><a href="blog.html">- Blog</a></li>
-                      <li><a href="blog-details.html">- Blog Details</a></li>
-                      <li><a href="contact.html">- Contact</a></li>
-                      <li><a href="#">- Dropdown</a>
-                        <ul class="dropdown">
-                          <li><a href="#">- Dropdown Item</a></li>
-                          <li><a href="#">- Dropdown Item</a>
-                            <ul class="dropdown">
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">- Dropdown Item</a></li>
-                          <li><a href="#">- Dropdown Item</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Service</a></li>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="#">Blog</a>
-                    <ul class="dropdown">
-                      <li><a href="blog.html">- Blog</a></li>
-                      <li><a href="blog-details.html">- Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="{%url 'home' %}">Home</a></li>
+                  <li><a href="{%url 'about' %}">About</a></li>
+                  <li><a href="{%url 'service' %}">Service</a></li>
+                  <li><a href="{%url 'pricing' %}">Pricing</a></li>
+                  <li><a href="{%url 'contact' %}">Contact</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
@@ -180,12 +149,10 @@
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Policy</a></li>
-                    <li><a href="#">News</a></li>
                     <li><a href="#">Advisors</a></li>
-                    <li><a href="#">Careers</a></li>
                     <li><a href="#">Dentist</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Legals</a></li>
+                    
                     </ul>
                 </nav>
                 </div>
@@ -212,7 +179,6 @@
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
                 </div>
                 </div>
             </div>
@@ -220,22 +186,13 @@
         </div>
 
         <!-- Copywrite Area -->
-        <div class="container">
-            <div class="row">
-            <div class="col-12">
-                <div class="copywrite-content">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </footer>
+       
 
     <!-- ***** Footer Area End ***** -->
 
   <!-- ******* All JS ******* -->
+  <!-- custom function--> -->
+  <script src="{% static 'website/js/my.js' %}"></script>
   <!-- jQuery js -->
   <script src="{% static 'website/js/jquery.min.js' %}"></script>
   <!-- Popper js -->
