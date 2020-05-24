@@ -1,4 +1,4 @@
-Django website project for doctors and dentists
+<h1>Django website project for doctors and dentists</h1>
 
 Dento website template is used and is modified such that only images and content need to be changed and you have a working website.
 
