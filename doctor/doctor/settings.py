@@ -112,10 +112,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-#Email Settings
-Email_host = 'http://127.0.0.1:8000'
-EMAIL_PORT = 1000
-EMAIL_HOST_USER = ''
+#Email server Settings command ==> python -m smtpd -n -c DebuggingServer  localhost:1000
+Email_host = 'localhost' #smtp of gmail
+EMAIL_PORT = 1000 #gmail port
+EMAIL_HOST_USER = ''#gmail address
 EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
+EMAIL_USE_TLS = False #gmail usses TLS
 EMAIL_USE_SSL = False

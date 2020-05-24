@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Set an appointment to see Dr. Talha{% endblock %}
+{% block meta_description %} Appointment for a dental checkup{% endblock %}
+{% block content %}
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Appointment</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/><br/><br/><br/>
+  <!-- ***** Breadcrumb Area End ***** --> 
+<center>
+    <h1>Review your information</h1>
+    <strong>Your Name:</strong>{{your_name}}</br>
+    <strong>Your Email:</strong>{{your_email}}</br>
+    <strong>Your Address:</strong>{{your_address}}</br>
+    <strong>Your Phone:</strong>{{your_phone}}</br>
+    <strong>Your Schedule:</strong>{{your_schedule}}</br>
+    <strong>Your Date:</strong>{{your_date}}</br>
+    <strong>Your Message:</strong>{{your_message}}</br>
+</center>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<strong>Thank you for setting up an appointment, we will contact you shortly via telephone</strong>
+  <!-- ***** Contact Area Start ***** -->
+  
+
+  {% endblock %}
+
+
